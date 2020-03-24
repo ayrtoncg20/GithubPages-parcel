@@ -89,6 +89,10 @@ También tuvimos que instalar dos plugin para que eslint y prettier funcionen a 
 $ npm install -D eslint-config-prettier eslint-plugin-prettier
 ```
 
+a parte, de lo visto anteriormente también tenemos que hacer uso de github pages y de codepen, por ello he conectado github con Codepen como se ve en la siguiente imagen:
+
+imagen6
+
 
 
 
