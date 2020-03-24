@@ -21,17 +21,75 @@ Dentro de la carpeta DSI tenemos nuestra carpeta del proyecto que se llama dsi-p
 
 Dentro de la carpeta del proyecto creamos la carpeta src y dentro la carpeta js, css y assets, que es donde irán los diferentes códigos. 
 
+imagen1
+
 Cree el repositorio dentro de la carpeta del proyecto. 
 
 A continuación lo que hice fue instalar parcel con el comando:
 
+```
 $ npm install -D parcel-bundler 
+```
 
 Instalamos parcel en nuestro proyecto por lo que cuando tengamos otro proyecto vamos a tener que instalar parcel nuevamente.
 
 Para comprobar la versión de parcel utilizamos el comando:
 
+```
 $ npx parcel --version
+```
+
+Después de todo esto, cree los ficheros index.html, index.js e index.css.
+
+imagen2
+
+Inicializamos el servidor para comprobar que todo funciona
+
+```
+$ npx parcel src/index.html
+```
+
+imagen3
+
+Comprobamos que exactamente el código funciona bien porque sale lo que queremos por el navegador
+
+imagen4
+
+Para comprobar fallos en el código instalamos eslint y prettier. Tenemos que configurar tanto eslint como prettier para que trabajen a la vez sin problema. 
+
+En la siguiente imagen comprobamos que no tenemos errores en el código, porque ya los había corregido, tuve problemas de punto y coma al final, de comillas dobles en vez de simples y necesitaba una línea extra al final del código. Los he corregido y por eso en la siguiente imagen no sale ningun error. 
+
+imagen5
+
+En cuanto a la configuración de eslint y prettier puse que permitiera punto y coma al final aunque en javascript no hace falta yo tambien estoy acostumbrado a programar con punto y coma por lo que he modificado el archivo. 
+
+En el siguiente fichero modificamos el eslint para que por ejemplo sepa que vamos a poner punto y coma al final de la línea y no lo muestre como un error. 
+
+```
+$ code .eslintrc.json 
+```
+
+El comando
+
+```
+$ npx eslint src --fix 
+```
+
+corrige los errores automáticamente pero tenemos que configurarlo anteriomente para que lo haga, lo intentaré realizar para la segunda práctica.
+
+Con el siguiente comando instalamos prettier
+
+```
+$ npm install -D prettier
+```
+
+También tuvimos que instalar dos plugin para que eslint y prettier funcionen a la vez correctamente. Con el siguiente comando lo instalamos:
+
+```
+$ npm install -D eslint-config-prettier eslint-plugin-prettier
+```
+
+
 
 
 
