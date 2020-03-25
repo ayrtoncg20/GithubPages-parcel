@@ -21,7 +21,8 @@ Dentro de la carpeta DSI tenemos nuestra carpeta del proyecto que se llama dsi-p
 
 Dentro de la carpeta del proyecto creamos la carpeta src y dentro la carpeta js, css y assets, que es donde irán los diferentes códigos. 
 
-imagen1
+
+![imagen1](imagenes/imagen1.png)
 
 Cree el repositorio dentro de la carpeta del proyecto. 
 
@@ -41,7 +42,7 @@ $ npx parcel --version
 
 Después de todo esto, cree los ficheros index.html, index.js e index.css.
 
-imagen2
+![imagen2](imagenes/imagen2.png)
 
 Inicializamos el servidor para comprobar que todo funciona
 
@@ -49,17 +50,19 @@ Inicializamos el servidor para comprobar que todo funciona
 $ npx parcel src/index.html
 ```
 
-imagen3
+
+![imagen3](imagenes/imagen3.png)
 
 Comprobamos que exactamente el código funciona bien porque sale lo que queremos por el navegador
 
-imagen4
+![imagen4](imagenes/imagen4.png)
 
 Para comprobar fallos en el código instalamos eslint y prettier. Tenemos que configurar tanto eslint como prettier para que trabajen a la vez sin problema. 
 
 En la siguiente imagen comprobamos que no tenemos errores en el código, porque ya los había corregido, tuve problemas de punto y coma al final, de comillas dobles en vez de simples y necesitaba una línea extra al final del código. Los he corregido y por eso en la siguiente imagen no sale ningun error. 
 
-imagen5
+
+![imagen5](imagenes/imagen5.png)
 
 En cuanto a la configuración de eslint y prettier puse que permitiera punto y coma al final aunque en javascript no hace falta yo tambien estoy acostumbrado a programar con punto y coma por lo que he modificado el archivo. 
 
@@ -91,7 +94,17 @@ $ npm install -D eslint-config-prettier eslint-plugin-prettier
 
 a parte, de lo visto anteriormente también tenemos que hacer uso de github pages y de codepen, por ello he conectado github con Codepen como se ve en la siguiente imagen:
 
-imagen6
+
+![imagen6](imagenes/imagen6.png)
+
+
+En el uso de github pages he creado un respositorio para la práctica 1 que es la de parcel. En la siguiente imagen se ven el URL donde se muestra nuestra página web y la página web en cuestión.
+
+![imagen7](imagenes/imagen7.png)
+
+
+![imagen8](imagenes/imagen8.png)
+
 
 
 
