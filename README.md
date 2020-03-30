@@ -105,6 +105,15 @@ En el uso de github pages he creado un respositorio para la práctica 1 que es l
 
 ![imagen8](imagenes/imagen8.png)
 
+##Reto: vinilo
+
+Aquí podemos ver el código para desallorar el vinilo. 
+
+!{imagen9](imagenes/imagen9.png)
+
+!{imagen10](imagenes/imagen10.png)
+
+!{imagen11](imagenes/imagen11.png)
 
 
 
