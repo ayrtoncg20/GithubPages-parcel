@@ -116,6 +116,63 @@ Aquí podemos ver el código para desallorar el vinilo.
 ![imagen11](imagenes/imagen11.png)
 
 
+##Assets con parcel 
+
+Parcel está basado en assets. Un asset puede representar cualquier archivo, tiene soporte especial para ciertos tipos de archivos como Javascript, CSS y HTML. 
+
+Para importar los assets aquí tenemos varios ejemplos:
+
+Importa un archivo css
+
+```
+import './test.css'
+```
+
+Importa un archivo css con css modules
+
+```
+import classNames from './test.css'
+```
+
+Importa la URL de una imagen
+
+```
+import imageURL from './test.png'
+```
+
+Los archivos css pueden ser importados a partir de un archivo Javascript o HTML y pueden tener referencias de dependencias utilizando @import así también como referencias a imágenes, fuentes, etc. 
+
+```
+/* Importa otro archivo CSS */
+@import './other.css';
+
+.test {
+  /* Referencia una imagen */
+  background: url('./images/background.png');
+}
+```
+
+
+Los archivos HTML son frecuentemente utilizados como punto de entrada para parcel, pero también pueden ser referenciados en archivos javascrip. Enlaces a otras páginas, URL a scripts, estilos, multimedia y otros archivos HTML.
+
+```
+<html>
+<body>
+  <!-- referencia a una imagen -->
+  <img src="./images/header.png">
+
+  <a href="./other.html">Enlace a otra página</a>
+
+  <!-- Importa un paquete JavaScript -->
+  <script src="./index.js"></script>
+</body>
+</html>
+```
+
+
+
+
+
 
 
 
